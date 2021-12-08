@@ -7,9 +7,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 from collections import Counter
 from sklearn import datasets
+from sklearn.model_selection import train_test_split
 import time
 import math
 
+"""
+模型比sklearn中的模型运算效率低非常多，sklearn中的模型优化在哪里了呢？
+不用对于每个预测数据都进行遍历，直接向量化？还是使用kd_tree等算法优化了呢？
+"""
 
 class MyKNN:
     def __init__(self):
