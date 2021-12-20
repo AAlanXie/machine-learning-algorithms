@@ -16,6 +16,7 @@ import math
 不用对于每个预测数据都进行遍历，直接向量化？还是使用kd_tree等算法优化了呢？
 """
 
+
 class MyKNN:
     def __init__(self):
         self.x = None
@@ -108,5 +109,3 @@ if __name__ == '__main__':
     # 结束时间
     end = time.time()
     print('time span: ', end - start)
-
-
